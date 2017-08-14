@@ -32,7 +32,7 @@ function draw() {
 
     // lines left to right, top to bottom.
     for (var x1 = -800; x1 <= 800; x1 = x1+100) {
-        stroke(random(255), random(255), random(255), random(75, 150));
+        stroke(random(255), random(255), random(255), random(75, 200));
         strokeWeight(62);
         push();
         line(x1, -15, x1 + 800, 615);
@@ -41,7 +41,7 @@ function draw() {
 
     //lines left to right, bottom to top.
     for (var x1 = 0; x1 <= 1600; x1 = x1+100) {
-        stroke(random(255), random(255), random(255), random(75, 150));
+        stroke(random(255), random(255), random(255), random(75, 200));
         strokeWeight(62);
         push();
         line(x1, -15, x1 -800, 615);
@@ -50,7 +50,7 @@ function draw() {
 
     //vertical lines.
     for (var x1 = 0; x1 <= 800; x1 = x1+75) {
-        stroke(random(255), random(255), random(255), random(75, 150));
+        stroke(random(255), random(255), random(255), random(75, 200));
         strokeWeight(50);
         push();
         line(x1, -15, x1, 615);
