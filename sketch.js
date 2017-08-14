@@ -3,7 +3,6 @@
 var customFont;
 var myText;
 
-
 // Constants
 var X_AXIS = 1;
 var greenColour, blueColour;
@@ -33,7 +32,7 @@ function draw() {
 
     // lines left to right, top to bottom.
     for (var x1 = -800; x1 <= 800; x1 = x1+100) {
-        stroke(random(255), random(255), random(255), random(50, 150));
+        stroke(random(255), random(255), random(255), random(75, 150));
         strokeWeight(62);
         push();
         line(x1, -15, x1 + 800, 615);
@@ -42,7 +41,7 @@ function draw() {
 
     //lines left to right, bottom to top.
     for (var x1 = 0; x1 <= 1600; x1 = x1+100) {
-        stroke(random(255), random(255), random(255), random(50, 150));
+        stroke(random(255), random(255), random(255), random(75, 150));
         strokeWeight(62);
         push();
         line(x1, -15, x1 -800, 615);
@@ -51,15 +50,18 @@ function draw() {
 
     //vertical lines.
     for (var x1 = 0; x1 <= 800; x1 = x1+75) {
-        stroke(random(255), random(255), random(255), random(50, 150));
+        stroke(random(255), random(255), random(255), random(75, 150));
         strokeWeight(50);
         push();
         line(x1, -15, x1, 615);
         pop();
     }
 
+
     setGradient(0, 410, 800, 140, blueColour, greenColour, X_AXIS);
+
     nameWriter();
+
 }
 
 // save to downloads folder
@@ -88,4 +90,6 @@ function nameWriter() {
     myText = text("Francisco", 5, height-50);
     myText.tint(255, 127);
 }
+
+
 
