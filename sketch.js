@@ -71,6 +71,7 @@ function keyTyped() {
     }
 }
 
+// creates the gradient with parameters provided.
 function setGradient(x, y, w, h, c1, c2, axis) {
 
     if (axis === X_AXIS) {  // Left to right gradient
@@ -83,6 +84,7 @@ function setGradient(x, y, w, h, c1, c2, axis) {
     }
 }
 
+// writes the name in the Tag.
 function nameWriter() {
     textFont(customFont);
     noStroke();
